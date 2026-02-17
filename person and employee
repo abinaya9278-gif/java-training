@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+class Person{
+    void Name(String str)
+    {
+        System.out.println("Name:"+str);
+        }}
+class Employee extends Person{
+    void Salary(double n)
+    {
+        System.out.println("Salary:"+n);
+         }}
+public class Main{
+        public static void main(String args[]){
+        Scanner s=new Scanner(System.in);
+        String str= s.nextLine();
+        double n=s.nextDouble();
+        Employee obj=new Employee();
+            obj.Name(str);
+            obj.Salary(n);
+            }
+    }
